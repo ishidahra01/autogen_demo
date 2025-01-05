@@ -31,7 +31,9 @@ Follow the steps below to start exploring the repository:
    pip install -r requirements.txt
    ```
 
-3. Run python code or notebook:
+3. Create .env file. You can use .env.example and rename it.
+
+4. Run python code or notebook:
 
 ### Running with Dev Containers
 
@@ -53,11 +55,11 @@ For a seamless development environment, you can use a Dev Container:
 
 4. The container setup will automatically install all dependencies and set up the environment.
 
-5. Run python code or notebook:
+5. Create .env file. You can use .env.example and rename it.
+
+6. Run python code or notebook:
 
 ---
-
-Happy coding with AutoGen!
 
 
 

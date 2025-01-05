@@ -1,6 +1,10 @@
 import os
+from dotenv import load_dotenv
 
 from autogen import ConversableAgent
+
+# Load environment variables
+load_dotenv(override=True)
 
 model = os.getenv("AZURE_OPENAI_CHAT_DEPLOYMENT_NAME")
 api_key = os.getenv("AZURE_OPENAI_API_KEY")
