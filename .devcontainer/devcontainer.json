@@ -19,7 +19,14 @@
 			]
 		}
 	},
-	"mounts": ["source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"]
+	"mounts": ["source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"],
+	"remoteEnv": {
+		"AZURE_OPENAI_API_KEY": "${{ secrets.AZURE_OPENAI_API_KEY }}",
+		"AZURE_OPENAI_ENDPOINT": "${{ secrets.AZURE_OPENAI_ENDPOINT }}",
+		"AZURE_OPENAI_CHAT_DEPLOYMENT_NAME": "${{ secrets.AZURE_OPENAI_CHAT_DEPLOYMENT_NAME }}",
+		"AZURE_OPENAI_API_VERSION": "${{ secrets.AZURE_OPENAI_API_VERSION }}",
+		"AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME": "${{ secrets.AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME }}"
+	}
 
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
